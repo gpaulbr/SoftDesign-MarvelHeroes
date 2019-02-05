@@ -15,6 +15,8 @@
 		16D544212208F717009F64D4 /* MarvelHeroesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D544202208F717009F64D4 /* MarvelHeroesTests.swift */; };
 		16D5443122093B79009F64D4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443022093B79009F64D4 /* Coordinator.swift */; };
 		16D5443322093B9E009F64D4 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443222093B9E009F64D4 /* ApplicationCoordinator.swift */; };
+		16D5443522093C45009F64D4 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443422093C45009F64D4 /* StoryboardInstantiable.swift */; };
+		16D5443722093C5C009F64D4 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443622093C5C009F64D4 /* UIImageViewExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		16D544222208F717009F64D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16D5443022093B79009F64D4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		16D5443222093B9E009F64D4 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		16D5443422093C45009F64D4 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		16D5443622093C5C009F64D4 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 		16D5442C22093B47009F64D4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				16D5443422093C45009F64D4 /* StoryboardInstantiable.swift */,
+				16D5443622093C5C009F64D4 /* UIImageViewExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -237,6 +243,8 @@
 			files = (
 				16D5440E2208F714009F64D4 /* ViewController.swift in Sources */,
 				16D5440C2208F714009F64D4 /* AppDelegate.swift in Sources */,
+				16D5443722093C5C009F64D4 /* UIImageViewExtension.swift in Sources */,
+				16D5443522093C45009F64D4 /* StoryboardInstantiable.swift in Sources */,
 				16D5443122093B79009F64D4 /* Coordinator.swift in Sources */,
 				16D5443322093B9E009F64D4 /* ApplicationCoordinator.swift in Sources */,
 			);
