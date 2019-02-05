@@ -12,23 +12,17 @@ class HeroCellViewModel {
     
     private let hero: Hero
     
-    var title: String { return hero.title }
-    
-    var releaseDate: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy'-'MM'-'dd"
-        let date = dateFormatter.date(from: hero.releaseDate) ?? Date()
-        dateFormatter.dateFormat = "yyyy MMMM dd"
-        return dateFormatter.string(from: date)
-    }
+    var name: String { return hero.name }
     
     var imageUrl: String {
-        guard let path = hero.posterPath else {
+        guard let thumbnail = hero.thumbnail else {
             return "https://www.rvroundtable.com/wp-content/uploads/revslider/home5/placeholder-1200x500.png"
         }
         
-        return "http://image.tmdb.org/t/p/w185\(path)"
+        return "\(thumbnail.path)\(thumbnail.extension)"
     }
+    
+    var description: String { return hero.description }
     
     init(hero: Hero) {
         self.hero = hero

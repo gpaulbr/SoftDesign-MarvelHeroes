@@ -13,15 +13,20 @@ class HeroTableViewCell: UITableViewCell {
     
     private var viewModel: HeroCellViewModel!
     
+    @IBOutlet weak var heroName: UILabel!
+    @IBOutlet weak var heroImage: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        selectionStyle = .none
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    func configure(with viewModel: HeroCellViewModel) {
+        self.viewModel = viewModel
+        heroName.text = viewModel.name
+        
+        heroImage.dowloadFromServer(link: viewModel.imageUrl, contentMode: .scaleAspectFill)
+        heroImage.clipsToBounds = true
     }
     
 }
