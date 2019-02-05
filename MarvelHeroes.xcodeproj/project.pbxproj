@@ -15,6 +15,8 @@
 		16D5443322093B9E009F64D4 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443222093B9E009F64D4 /* ApplicationCoordinator.swift */; };
 		16D5443522093C45009F64D4 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443422093C45009F64D4 /* StoryboardInstantiable.swift */; };
 		16D5443722093C5C009F64D4 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443622093C5C009F64D4 /* UIImageViewExtension.swift */; };
+		16D5444522094672009F64D4 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5444422094672009F64D4 /* Hero.swift */; };
+		16D54447220964D8009F64D4 /* ThumbnailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D54446220964D7009F64D4 /* ThumbnailImage.swift */; };
 		16D5444922096722009F64D4 /* HeroesListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5444822096722009F64D4 /* HeroesListCoordinator.swift */; };
 /* End PBXBuildFile section */
 
@@ -134,6 +136,8 @@
 		16D5442E22093B63009F64D4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				16D5444422094672009F64D4 /* Hero.swift */,
+				16D54446220964D7009F64D4 /* ThumbnailImage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
