@@ -38,8 +38,8 @@ class ApplicationCoordinator: Coordinator {
     }
     
     private func showMovieList() {
-        let movieListCoordinator = MovieListCoordinator(presenter: rootViewController)
-        addChild(coordinator: movieListCoordinator)
-        movieListCoordinator.start()
+        let heroesListCoordinator = HeroesListCoordinator(presenter: rootViewController)
+        addChild(coordinator: heroesListCoordinator)
+        heroesListCoordinator.start()
     }
 }

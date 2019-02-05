@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16D5440C2208F714009F64D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5440B2208F714009F64D4 /* AppDelegate.swift */; };
+		16D544112208F714009F64D4 /* HeroesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D5440F2208F714009F64D4 /* HeroesList.storyboard */; };
 		16D544132208F717009F64D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D544122208F717009F64D4 /* Assets.xcassets */; };
 		16D544162208F717009F64D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D544142208F717009F64D4 /* LaunchScreen.storyboard */; };
 		16D544212208F717009F64D4 /* MarvelHeroesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D544202208F717009F64D4 /* MarvelHeroesTests.swift */; };
@@ -15,6 +16,11 @@
 		16D5443322093B9E009F64D4 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443222093B9E009F64D4 /* ApplicationCoordinator.swift */; };
 		16D5443522093C45009F64D4 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443422093C45009F64D4 /* StoryboardInstantiable.swift */; };
 		16D5443722093C5C009F64D4 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443622093C5C009F64D4 /* UIImageViewExtension.swift */; };
+		16D5443922093CFA009F64D4 /* HeroesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443822093CFA009F64D4 /* HeroesListViewController.swift */; };
+		16D5443B22093D2F009F64D4 /* HeroesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443A22093D2F009F64D4 /* HeroesListViewModel.swift */; };
+		16D5444022093E2B009F64D4 /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443E22093E2B009F64D4 /* HeroTableViewCell.swift */; };
+		16D5444122093E2B009F64D4 /* HeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D5443F22093E2B009F64D4 /* HeroTableViewCell.xib */; };
+		16D544432209408D009F64D4 /* HeroCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D544422209408D009F64D4 /* HeroCellViewModel.swift */; };
 		16D5444522094672009F64D4 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5444422094672009F64D4 /* Hero.swift */; };
 		16D54447220964D8009F64D4 /* ThumbnailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D54446220964D7009F64D4 /* ThumbnailImage.swift */; };
 		16D5444922096722009F64D4 /* HeroesListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5444822096722009F64D4 /* HeroesListCoordinator.swift */; };
@@ -44,6 +50,13 @@
 		16D5443222093B9E009F64D4 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		16D5443422093C45009F64D4 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		16D5443622093C5C009F64D4 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		16D5443822093CFA009F64D4 /* HeroesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListViewController.swift; sourceTree = "<group>"; };
+		16D5443A22093D2F009F64D4 /* HeroesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListViewModel.swift; sourceTree = "<group>"; };
+		16D5443E22093E2B009F64D4 /* HeroTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroTableViewCell.swift; sourceTree = "<group>"; };
+		16D5443F22093E2B009F64D4 /* HeroTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroTableViewCell.xib; sourceTree = "<group>"; };
+		16D544422209408D009F64D4 /* HeroCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellViewModel.swift; sourceTree = "<group>"; };
+		16D5444422094672009F64D4 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		16D54446220964D7009F64D4 /* ThumbnailImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailImage.swift; sourceTree = "<group>"; };
 		16D5444822096722009F64D4 /* HeroesListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -129,6 +142,7 @@
 		16D5442D22093B53009F64D4 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				16D5443C22093DD5009F64D4 /* Heroes List */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -140,6 +154,27 @@
 				16D54446220964D7009F64D4 /* ThumbnailImage.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		16D5443C22093DD5009F64D4 /* Heroes List */ = {
+			isa = PBXGroup;
+			children = (
+				16D5443D22093DEC009F64D4 /* Cell */,
+				16D5443822093CFA009F64D4 /* HeroesListViewController.swift */,
+				16D5440F2208F714009F64D4 /* HeroesList.storyboard */,
+				16D5443A22093D2F009F64D4 /* HeroesListViewModel.swift */,
+			);
+			path = "Heroes List";
+			sourceTree = "<group>";
+		};
+		16D5443D22093DEC009F64D4 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				16D5443E22093E2B009F64D4 /* HeroTableViewCell.swift */,
+				16D5443F22093E2B009F64D4 /* HeroTableViewCell.xib */,
+				16D544422209408D009F64D4 /* HeroCellViewModel.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +259,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				16D544162208F717009F64D4 /* LaunchScreen.storyboard in Resources */,
+				16D5444122093E2B009F64D4 /* HeroTableViewCell.xib in Resources */,
 				16D544132208F717009F64D4 /* Assets.xcassets in Resources */,
+				16D544112208F714009F64D4 /* HeroesList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,10 +280,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				16D5440C2208F714009F64D4 /* AppDelegate.swift in Sources */,
+				16D544432209408D009F64D4 /* HeroCellViewModel.swift in Sources */,
+				16D5443B22093D2F009F64D4 /* HeroesListViewModel.swift in Sources */,
 				16D5443722093C5C009F64D4 /* UIImageViewExtension.swift in Sources */,
 				16D5443522093C45009F64D4 /* StoryboardInstantiable.swift in Sources */,
+				16D5444522094672009F64D4 /* Hero.swift in Sources */,
+				16D5443922093CFA009F64D4 /* HeroesListViewController.swift in Sources */,
+				16D5444022093E2B009F64D4 /* HeroTableViewCell.swift in Sources */,
 				16D5444922096722009F64D4 /* HeroesListCoordinator.swift in Sources */,
 				16D5443122093B79009F64D4 /* Coordinator.swift in Sources */,
+				16D54447220964D8009F64D4 /* ThumbnailImage.swift in Sources */,
 				16D5443322093B9E009F64D4 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,11 +313,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		16D5440F2208F714009F64D4 /* HeroesList.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				16D544102208F714009F64D4 /* Base */,
 			);
-			name = Main.storyboard;
+			name = HeroesList.storyboard;
 			sourceTree = "<group>";
 		};
 		16D544142208F717009F64D4 /* LaunchScreen.storyboard */ = {
