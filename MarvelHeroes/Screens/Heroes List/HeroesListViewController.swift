@@ -19,6 +19,7 @@ class HeroesListViewController: UIViewController {
         
         heroesTableView.delegate = self
         heroesTableView.dataSource = self
+        heroesTableView.register(UINib(nibName: "HeroTableViewCell", bundle: nil), forCellReuseIdentifier: HeroTableViewCell.identifier)
         
         self.navigationItem.title = viewModel.title
     }
@@ -38,9 +39,9 @@ extension HeroesListViewController: UITableViewDataSource {
                     return UITableViewCell()
         }
         
-        let heroCellViewModel = self.viewModel.heroesListTableViewModel(for: indexPath)
+        let heroCellViewModel = self.viewModel.heroCellViewModel(for: indexPath)
         
-        cell.configure(with: movieCellViewModel)
+        cell.configure(with: heroCellViewModel)
         return cell
     }
 }
@@ -50,11 +51,11 @@ extension HeroesListViewController: UITableViewDelegate {
 //        delegate?.heroesList(self, didClick: viewModel.hero(for: indexPath))
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if (indexPath.row + 1) == tableView.numberOfRows(inSection: 0) {
-            viewModel.getMoreHeroes()
-        }
-    }
+//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+//        if (indexPath.row + 1) == tableView.numberOfRows(inSection: 0) {
+//            viewModel.getMoreHeroes()
+//        }
+//    }
 }
 
 extension HeroesListViewController: StoryboardInstantiable {

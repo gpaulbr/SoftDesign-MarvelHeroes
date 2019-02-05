@@ -19,28 +19,32 @@ class HeroesListViewModel {
     
     weak var UIDelegate: HeroesListViewModelUIDelegate?
     
+    var title: String { return "Marvel Heroes" }
+    
     var numberOfRows: Int {
         return heroes.count
     }
     
     init() {
-        getMoreHeroes()
+        let hero1 = Hero.init(id: 1, name: "Spider", description: "muitcho doido", thumbnail: ThumbnailImage.init(path: "http://i.annihil.us/u/prod/marvel/i/mg/b/c0/553a9abceb412", extension: ".jpg"))
+        heroes.append(hero1)
+//        getMoreHeroes()
     }
     
-    func getMoreHeroes() {
-        guard pageNumber <= pageNumberMax else { return }
-        APIManager.shared.getHeroes(pageNumber: pageNumber, completion: { (heroesQuerry) in
-            self.heroes.append(contentsOf: heroesQuerry)
-            self.UIDelegate?.movieListViewModelDidUpdate(self)
-        })
-        pageNumber += 1
-    }
+//    func getMoreHeroes() {
+//        guard pageNumber <= pageNumberMax else { return }
+//        APIManager.shared.getHeroes(pageNumber: pageNumber, completion: { (heroesQuerry) in
+//            self.heroes.append(contentsOf: heroesQuerry)
+//            self.UIDelegate?.movieListViewModelDidUpdate(self)
+//        })
+//        pageNumber += 1
+//    }
     
     func hero(for indexPath: IndexPath) -> Hero {
         return heroes[indexPath.row]
     }
     
-    func movieCellViewModel(for indexPath: IndexPath) -> HeroCellViewModel {
+    func heroCellViewModel(for indexPath: IndexPath) -> HeroCellViewModel {
         let hero = heroes[indexPath.row]
         let viewModel = HeroCellViewModel.init(hero: hero)
         return viewModel
