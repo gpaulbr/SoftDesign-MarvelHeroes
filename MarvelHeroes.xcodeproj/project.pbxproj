@@ -15,6 +15,7 @@
 		16D5443322093B9E009F64D4 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443222093B9E009F64D4 /* ApplicationCoordinator.swift */; };
 		16D5443522093C45009F64D4 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443422093C45009F64D4 /* StoryboardInstantiable.swift */; };
 		16D5443722093C5C009F64D4 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443622093C5C009F64D4 /* UIImageViewExtension.swift */; };
+		16D5444922096722009F64D4 /* HeroesListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5444822096722009F64D4 /* HeroesListCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		16D5443222093B9E009F64D4 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		16D5443422093C45009F64D4 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiable.swift; sourceTree = "<group>"; };
 		16D5443622093C5C009F64D4 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		16D5444822096722009F64D4 /* HeroesListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				16D5443022093B79009F64D4 /* Coordinator.swift */,
 				16D5443222093B9E009F64D4 /* ApplicationCoordinator.swift */,
+				16D5444822096722009F64D4 /* HeroesListCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				16D5440C2208F714009F64D4 /* AppDelegate.swift in Sources */,
 				16D5443722093C5C009F64D4 /* UIImageViewExtension.swift in Sources */,
 				16D5443522093C45009F64D4 /* StoryboardInstantiable.swift in Sources */,
+				16D5444922096722009F64D4 /* HeroesListCoordinator.swift in Sources */,
 				16D5443122093B79009F64D4 /* Coordinator.swift in Sources */,
 				16D5443322093B9E009F64D4 /* ApplicationCoordinator.swift in Sources */,
 			);
