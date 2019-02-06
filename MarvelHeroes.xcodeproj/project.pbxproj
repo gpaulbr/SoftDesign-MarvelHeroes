@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16603737220A212C00FDACBC /* MD5Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603736220A212C00FDACBC /* MD5Helper.swift */; };
 		1660373B220A24EA00FDACBC /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1660373A220A24EA00FDACBC /* APIRequest.swift */; };
 		1660373D220A254900FDACBC /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1660373C220A254900FDACBC /* APIResponse.swift */; };
 		1660373F220A258000FDACBC /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1660373E220A258000FDACBC /* DataContainer.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16603736220A212C00FDACBC /* MD5Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5Helper.swift; sourceTree = "<group>"; };
 		1660373A220A24EA00FDACBC /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		1660373C220A254900FDACBC /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		1660373E220A258000FDACBC /* DataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			children = (
 				16D5443422093C45009F64D4 /* StoryboardInstantiable.swift */,
 				16D5443622093C5C009F64D4 /* UIImageViewExtension.swift */,
+				16603736220A212C00FDACBC /* MD5Helper.swift */,
 				16603744220A267200FDACBC /* HTTPParameter.swift */,
 			);
 			path = Helpers;
@@ -311,6 +314,7 @@
 				16D5444922096722009F64D4 /* HeroesListCoordinator.swift in Sources */,
 				1660373F220A258000FDACBC /* DataContainer.swift in Sources */,
 				16D5443122093B79009F64D4 /* Coordinator.swift in Sources */,
+				16603737220A212C00FDACBC /* MD5Helper.swift in Sources */,
 				16D54447220964D8009F64D4 /* Image.swift in Sources */,
 				1660373B220A24EA00FDACBC /* APIRequest.swift in Sources */,
 				16D5443322093B9E009F64D4 /* ApplicationCoordinator.swift in Sources */,
