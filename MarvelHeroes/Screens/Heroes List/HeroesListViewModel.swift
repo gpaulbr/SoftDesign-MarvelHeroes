@@ -34,10 +34,6 @@ class HeroesListViewModel {
     
     func getMoreHeroes() {
         guard pageNumber <= pageNumberMax else { return }
-//        APIManager.shared.getHeroes(pageNumber: pageNumber, completion: { (heroesQuerry) in
-//            self.heroes.append(contentsOf: heroesQuerry)
-////            self.UIDelegate?.movieListViewModelDidUpdate(self)
-//        })
         apiClient.send(GetHeroes(limit: 20, offset: pageNumber * 20)) { response in
             switch response {
             case .success(let dataContainer):
