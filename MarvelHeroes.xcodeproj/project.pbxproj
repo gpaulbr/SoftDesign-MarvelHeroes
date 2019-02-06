@@ -11,6 +11,7 @@
 		1660373D220A254900FDACBC /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1660373C220A254900FDACBC /* APIResponse.swift */; };
 		1660373F220A258000FDACBC /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1660373E220A258000FDACBC /* DataContainer.swift */; };
 		16603741220A25B900FDACBC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603740220A25B900FDACBC /* Result.swift */; };
+		16603745220A267200FDACBC /* HTTPParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603744220A267200FDACBC /* HTTPParameter.swift */; };
 		16603747220A26C000FDACBC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603746220A26C000FDACBC /* APIError.swift */; };
 		16D5440C2208F714009F64D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5440B2208F714009F64D4 /* AppDelegate.swift */; };
 		16D544112208F714009F64D4 /* HeroesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D5440F2208F714009F64D4 /* HeroesList.storyboard */; };
@@ -46,6 +47,7 @@
 		1660373C220A254900FDACBC /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		1660373E220A258000FDACBC /* DataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
 		16603740220A25B900FDACBC /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		16603744220A267200FDACBC /* HTTPParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParameter.swift; sourceTree = "<group>"; };
 		16603746220A26C000FDACBC /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		16D544082208F714009F64D4 /* MarvelHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D5440B2208F714009F64D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			children = (
 				16D5443422093C45009F64D4 /* StoryboardInstantiable.swift */,
 				16D5443622093C5C009F64D4 /* UIImageViewExtension.swift */,
+				16603744220A267200FDACBC /* HTTPParameter.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				16D5443B22093D2F009F64D4 /* HeroesListViewModel.swift in Sources */,
 				16D5443722093C5C009F64D4 /* UIImageViewExtension.swift in Sources */,
 				16D5443522093C45009F64D4 /* StoryboardInstantiable.swift in Sources */,
+				16603745220A267200FDACBC /* HTTPParameter.swift in Sources */,
 				1660373D220A254900FDACBC /* APIResponse.swift in Sources */,
 				16D5444522094672009F64D4 /* Hero.swift in Sources */,
 				16D5443922093CFA009F64D4 /* HeroesListViewController.swift in Sources */,
