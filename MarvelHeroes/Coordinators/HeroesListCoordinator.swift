@@ -14,6 +14,7 @@ class HeroesListCoordinator: Coordinator {
     
     private let presenter: UINavigationController
     private var heroesListViewController: HeroesListViewController?
+    private let apiClient = APIClient(publicKey: "e81a62777a0b00f8e8b85887fd58d16a", privateKey: "3f1235b807e85e11e9f8a5043440d4753ce037ec")
     
     init (presenter: UINavigationController) {
         self.presenter = presenter
@@ -22,7 +23,7 @@ class HeroesListCoordinator: Coordinator {
     
     func start() {
         let heroesListViewController = HeroesListViewController.instantiate()
-        let heroesListViewModel = HeroesListViewModel()
+        let heroesListViewModel = HeroesListViewModel(self.apiClient)
         heroesListViewController.viewModel = heroesListViewModel
 //        heroesListViewController.delegate = self
         
