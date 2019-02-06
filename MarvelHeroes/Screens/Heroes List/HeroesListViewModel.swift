@@ -29,10 +29,10 @@ class HeroesListViewModel {
     
     init(_ apiClient: APIClient) {
         self.apiClient = apiClient
-        getMoreHeroes()
+        getMoreHeroes() {}
     }
     
-    func getMoreHeroes() {
+    func getMoreHeroes(completion: @escaping (() -> Void)) {
         guard pageNumber <= pageNumberMax else { return }
         apiClient.send(GetHeroes(limit: 20, offset: pageNumber * 20)) { response in
             switch response {
@@ -45,7 +45,7 @@ class HeroesListViewModel {
                 print(error)
             }
             self.pageNumber += 1
-            
+            completion()
             DispatchQueue.main.async {
                 self.UIDelegate?.heroesListViewModelDidUpdate(self)
             }

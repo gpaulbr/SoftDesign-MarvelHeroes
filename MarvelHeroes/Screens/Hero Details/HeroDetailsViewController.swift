@@ -31,7 +31,6 @@ class HeroDetailsViewController: UIViewController {
         guard let url = viewModel.imageUrl else { return }
         heroImage.dowloadFromServer(url: url, contentMode: .scaleAspectFill) {
             () in
-            print("whatever")
         }
         heroImage.clipsToBounds = true
     }
