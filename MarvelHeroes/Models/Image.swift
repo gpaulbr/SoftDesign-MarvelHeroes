@@ -26,4 +26,8 @@ public struct Image: Decodable {
         
         self.url = url
     }
+    
+    public init(url: URL) {
+        self.url = url
+    }
 }
