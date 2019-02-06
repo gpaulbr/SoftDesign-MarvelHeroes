@@ -24,7 +24,7 @@ class HeroDetailsCoordinator: Coordinator {
     
     func start() {
         let heroDetailsViewController = HeroDetailsViewController.instantiate()
-        let heroDetailsViewModel = HeroDetailsViewModel(hero: hero)
+        let heroDetailsViewModel = HeroDetailsViewModel(hero)
         heroDetailsViewController.viewModel = heroDetailsViewModel
         
         self.heroDetailsViewController = heroDetailsViewController
