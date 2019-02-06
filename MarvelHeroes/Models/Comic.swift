@@ -9,5 +9,5 @@
 import Foundation
 
 public struct Comic: Decodable {
-    public let title: String?
+    public let name: String?
 }

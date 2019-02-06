@@ -18,7 +18,13 @@
 		16603747220A26C000FDACBC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603746220A26C000FDACBC /* APIError.swift */; };
 		1660374A220A331100FDACBC /* GetHeroes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603749220A331100FDACBC /* GetHeroes.swift */; };
 		1660374E220ACCC300FDACBC /* Comic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1660374D220ACCC300FDACBC /* Comic.swift */; };
-		16603750220AD0F900FDACBC /* ComicContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1660374F220AD0F900FDACBC /* ComicContainer.swift */; };
+		16603750220AD0F900FDACBC /* ComicResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1660374F220AD0F900FDACBC /* ComicResults.swift */; };
+		16603752220ADC0B00FDACBC /* HeroDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603751220ADC0B00FDACBC /* HeroDetailsCoordinator.swift */; };
+		16603757220AED0000FDACBC /* HeroDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16603756220AED0000FDACBC /* HeroDetails.storyboard */; };
+		16603759220AED0E00FDACBC /* HeroDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603758220AED0E00FDACBC /* HeroDetailsViewModel.swift */; };
+		1660375A220AF0CB00FDACBC /* HeroDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603754220AECE700FDACBC /* HeroDetailsViewController.swift */; };
+		1660375B220B134600FDACBC /* HeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D5443F22093E2B009F64D4 /* HeroTableViewCell.xib */; };
+		1660375D220B13AD00FDACBC /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443E22093E2B009F64D4 /* HeroTableViewCell.swift */; };
 		16D5440C2208F714009F64D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5440B2208F714009F64D4 /* AppDelegate.swift */; };
 		16D544112208F714009F64D4 /* HeroesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16D5440F2208F714009F64D4 /* HeroesList.storyboard */; };
 		16D544132208F717009F64D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16D544122208F717009F64D4 /* Assets.xcassets */; };
@@ -30,8 +36,6 @@
 		16D5443722093C5C009F64D4 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443622093C5C009F64D4 /* UIImageViewExtension.swift */; };
 		16D5443922093CFA009F64D4 /* HeroesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443822093CFA009F64D4 /* HeroesListViewController.swift */; };
 		16D5443B22093D2F009F64D4 /* HeroesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443A22093D2F009F64D4 /* HeroesListViewModel.swift */; };
-		16D5444022093E2B009F64D4 /* HeroTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5443E22093E2B009F64D4 /* HeroTableViewCell.swift */; };
-		16D5444122093E2B009F64D4 /* HeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D5443F22093E2B009F64D4 /* HeroTableViewCell.xib */; };
 		16D544432209408D009F64D4 /* HeroCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D544422209408D009F64D4 /* HeroCellViewModel.swift */; };
 		16D5444522094672009F64D4 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5444422094672009F64D4 /* Hero.swift */; };
 		16D54447220964D8009F64D4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D54446220964D7009F64D4 /* Image.swift */; };
@@ -60,7 +64,11 @@
 		16603746220A26C000FDACBC /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		16603749220A331100FDACBC /* GetHeroes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHeroes.swift; sourceTree = "<group>"; };
 		1660374D220ACCC300FDACBC /* Comic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comic.swift; sourceTree = "<group>"; };
-		1660374F220AD0F900FDACBC /* ComicContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicContainer.swift; sourceTree = "<group>"; };
+		1660374F220AD0F900FDACBC /* ComicResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicResults.swift; sourceTree = "<group>"; };
+		16603751220ADC0B00FDACBC /* HeroDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailsCoordinator.swift; sourceTree = "<group>"; };
+		16603754220AECE700FDACBC /* HeroDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailsViewController.swift; sourceTree = "<group>"; };
+		16603756220AED0000FDACBC /* HeroDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HeroDetails.storyboard; sourceTree = "<group>"; };
+		16603758220AED0E00FDACBC /* HeroDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailsViewModel.swift; sourceTree = "<group>"; };
 		16D544082208F714009F64D4 /* MarvelHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16D5440B2208F714009F64D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16D544102208F714009F64D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HeroesList.storyboard; sourceTree = "<group>"; };
@@ -108,6 +116,16 @@
 				16603749220A331100FDACBC /* GetHeroes.swift */,
 			);
 			path = Requests;
+			sourceTree = "<group>";
+		};
+		16603753220AECC600FDACBC /* Hero Details */ = {
+			isa = PBXGroup;
+			children = (
+				16603754220AECE700FDACBC /* HeroDetailsViewController.swift */,
+				16603756220AED0000FDACBC /* HeroDetails.storyboard */,
+				16603758220AED0E00FDACBC /* HeroDetailsViewModel.swift */,
+			);
+			path = "Hero Details";
 			sourceTree = "<group>";
 		};
 		16D543FF2208F714009F64D4 = {
@@ -160,6 +178,7 @@
 				16D5443222093B9E009F64D4 /* ApplicationCoordinator.swift */,
 				16D5443022093B79009F64D4 /* Coordinator.swift */,
 				16D5444822096722009F64D4 /* HeroesListCoordinator.swift */,
+				16603751220ADC0B00FDACBC /* HeroDetailsCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -180,6 +199,7 @@
 		16D5442D22093B53009F64D4 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				16603753220AECC600FDACBC /* Hero Details */,
 				16D5443C22093DD5009F64D4 /* Heroes List */,
 			);
 			path = Screens;
@@ -192,7 +212,7 @@
 				1660373A220A24EA00FDACBC /* APIRequest.swift */,
 				1660373C220A254900FDACBC /* APIResponse.swift */,
 				1660374D220ACCC300FDACBC /* Comic.swift */,
-				1660374F220AD0F900FDACBC /* ComicContainer.swift */,
+				1660374F220AD0F900FDACBC /* ComicResults.swift */,
 				1660373E220A258000FDACBC /* DataContainer.swift */,
 				16D5444422094672009F64D4 /* Hero.swift */,
 				16D54446220964D7009F64D4 /* Image.swift */,
@@ -302,8 +322,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16603757220AED0000FDACBC /* HeroDetails.storyboard in Resources */,
 				16D544162208F717009F64D4 /* LaunchScreen.storyboard in Resources */,
-				16D5444122093E2B009F64D4 /* HeroTableViewCell.xib in Resources */,
+				1660375B220B134600FDACBC /* HeroTableViewCell.xib in Resources */,
 				16D544132208F717009F64D4 /* Assets.xcassets in Resources */,
 				16D544112208F714009F64D4 /* HeroesList.storyboard in Resources */,
 			);
@@ -327,15 +348,15 @@
 				16D544432209408D009F64D4 /* HeroCellViewModel.swift in Sources */,
 				16603741220A25B900FDACBC /* Result.swift in Sources */,
 				16D5443B22093D2F009F64D4 /* HeroesListViewModel.swift in Sources */,
+				1660375D220B13AD00FDACBC /* HeroTableViewCell.swift in Sources */,
 				16D5443722093C5C009F64D4 /* UIImageViewExtension.swift in Sources */,
-				16603750220AD0F900FDACBC /* ComicContainer.swift in Sources */,
+				16603750220AD0F900FDACBC /* ComicResults.swift in Sources */,
 				16D5443522093C45009F64D4 /* StoryboardInstantiable.swift in Sources */,
 				16603745220A267200FDACBC /* HTTPParameter.swift in Sources */,
 				1660373D220A254900FDACBC /* APIResponse.swift in Sources */,
 				16D5444522094672009F64D4 /* Hero.swift in Sources */,
 				16D5443922093CFA009F64D4 /* HeroesListViewController.swift in Sources */,
 				1660374A220A331100FDACBC /* GetHeroes.swift in Sources */,
-				16D5444022093E2B009F64D4 /* HeroTableViewCell.swift in Sources */,
 				16603739220A247100FDACBC /* APIClient.swift in Sources */,
 				1660374E220ACCC300FDACBC /* Comic.swift in Sources */,
 				16D5444922096722009F64D4 /* HeroesListCoordinator.swift in Sources */,
@@ -343,10 +364,13 @@
 				16D5443122093B79009F64D4 /* Coordinator.swift in Sources */,
 				16603737220A212C00FDACBC /* MD5Helper.swift in Sources */,
 				16603743220A260200FDACBC /* URLQuerryItemEncoder.swift in Sources */,
+				1660375A220AF0CB00FDACBC /* HeroDetailsViewController.swift in Sources */,
 				16D54447220964D8009F64D4 /* Image.swift in Sources */,
+				16603759220AED0E00FDACBC /* HeroDetailsViewModel.swift in Sources */,
 				1660373B220A24EA00FDACBC /* APIRequest.swift in Sources */,
 				16D5443322093B9E009F64D4 /* ApplicationCoordinator.swift in Sources */,
 				16603747220A26C000FDACBC /* APIError.swift in Sources */,
+				16603752220ADC0B00FDACBC /* HeroDetailsCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,16 @@
 
 import UIKit
 
+protocol HeroesListDelegate: class {
+    func heroesList(_ heroesListViewController: HeroesListViewController, didClick hero: Hero)
+}
+
 class HeroesListViewController: UIViewController {
     
     @IBOutlet weak var heroesTableView: UITableView!
     
     var viewModel: HeroesListViewModel!
+    weak var delegate: HeroesListDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +55,7 @@ extension HeroesListViewController: UITableViewDataSource {
 
 extension HeroesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        delegate?.heroesList(self, didClick: viewModel.hero(for: indexPath))
+        delegate?.heroesList(self, didClick: viewModel.hero(for: indexPath))
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

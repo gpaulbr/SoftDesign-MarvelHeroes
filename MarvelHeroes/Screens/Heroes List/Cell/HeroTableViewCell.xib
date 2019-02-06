@@ -32,10 +32,15 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="cVT-HP-Rzk">
+                        <rect key="frame" x="48.5" y="40" width="20" height="20"/>
+                    </activityIndicatorView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="iPF-mx-r8h" firstAttribute="leading" secondItem="WKo-gV-ZK0" secondAttribute="trailing" constant="20" id="6UF-a1-Lki"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="WKo-gV-ZK0" secondAttribute="bottom" constant="7" id="IkI-Bb-qMN"/>
+                    <constraint firstItem="cVT-HP-Rzk" firstAttribute="centerY" secondItem="WKo-gV-ZK0" secondAttribute="centerY" id="Nwa-xw-PjT"/>
+                    <constraint firstItem="cVT-HP-Rzk" firstAttribute="centerX" secondItem="WKo-gV-ZK0" secondAttribute="centerX" id="aRv-q1-7jn"/>
                     <constraint firstAttribute="trailingMargin" secondItem="iPF-mx-r8h" secondAttribute="trailing" constant="20" id="ehY-wg-ZZb"/>
                     <constraint firstItem="iPF-mx-r8h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="7" id="i2J-pA-HhL"/>
                     <constraint firstItem="WKo-gV-ZK0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="mhl-bT-jAc"/>
@@ -48,6 +53,7 @@
             <connections>
                 <outlet property="heroImage" destination="WKo-gV-ZK0" id="QYs-R7-05O"/>
                 <outlet property="heroName" destination="iPF-mx-r8h" id="6Uo-bj-Kek"/>
+                <outlet property="loadingIndicator" destination="cVT-HP-Rzk" id="B1J-E3-1pN"/>
             </connections>
             <point key="canvasLocation" x="105.59999999999999" y="73.763118440779621"/>
         </tableViewCell>

@@ -25,9 +25,23 @@ class HeroesListCoordinator: Coordinator {
         let heroesListViewController = HeroesListViewController.instantiate()
         let heroesListViewModel = HeroesListViewModel(self.apiClient)
         heroesListViewController.viewModel = heroesListViewModel
-//        heroesListViewController.delegate = self
+        heroesListViewController.delegate = self
         
         self.heroesListViewController = heroesListViewController
         presenter.pushViewController(heroesListViewController, animated: false)
+    }
+    
+    fileprivate func showHeroDetails(hero: Hero) {
+        let heroDetailsCoordinator =
+            HeroDetailsCoordinator(presenter: presenter, hero: hero)
+        
+        addChild(coordinator: heroDetailsCoordinator)
+        heroDetailsCoordinator.start()
+    }
+}
+
+extension HeroesListCoordinator: HeroesListDelegate {
+    func heroesList(_ heroesListViewController: HeroesListViewController, didClick hero: Hero) {
+        showHeroDetails(hero: hero)
     }
 }
