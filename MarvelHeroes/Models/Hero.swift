@@ -8,9 +8,9 @@
 
 import Foundation
 
-struct Hero {
+public struct Hero: Decodable {
     let id: Int
-    let name: String
-    let description: String
-    let thumbnail: ThumbnailImage
+    let name: String?
+    let description: String?
+    let thumbnail: Image?
 }
