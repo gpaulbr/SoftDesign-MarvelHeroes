@@ -12,6 +12,7 @@
 		1660373D220A254900FDACBC /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1660373C220A254900FDACBC /* APIResponse.swift */; };
 		1660373F220A258000FDACBC /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1660373E220A258000FDACBC /* DataContainer.swift */; };
 		16603741220A25B900FDACBC /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603740220A25B900FDACBC /* Result.swift */; };
+		16603743220A260200FDACBC /* URLQuerryItemEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603742220A260200FDACBC /* URLQuerryItemEncoder.swift */; };
 		16603745220A267200FDACBC /* HTTPParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603744220A267200FDACBC /* HTTPParameter.swift */; };
 		16603747220A26C000FDACBC /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603746220A26C000FDACBC /* APIError.swift */; };
 		16D5440C2208F714009F64D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5440B2208F714009F64D4 /* AppDelegate.swift */; };
@@ -49,6 +50,7 @@
 		1660373C220A254900FDACBC /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		1660373E220A258000FDACBC /* DataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
 		16603740220A25B900FDACBC /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		16603742220A260200FDACBC /* URLQuerryItemEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQuerryItemEncoder.swift; sourceTree = "<group>"; };
 		16603744220A267200FDACBC /* HTTPParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPParameter.swift; sourceTree = "<group>"; };
 		16603746220A26C000FDACBC /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		16D544082208F714009F64D4 /* MarvelHeroes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MarvelHeroes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,6 +152,7 @@
 				16D5443422093C45009F64D4 /* StoryboardInstantiable.swift */,
 				16D5443622093C5C009F64D4 /* UIImageViewExtension.swift */,
 				16603736220A212C00FDACBC /* MD5Helper.swift */,
+				16603742220A260200FDACBC /* URLQuerryItemEncoder.swift */,
 				16603744220A267200FDACBC /* HTTPParameter.swift */,
 			);
 			path = Helpers;
@@ -315,6 +318,7 @@
 				1660373F220A258000FDACBC /* DataContainer.swift in Sources */,
 				16D5443122093B79009F64D4 /* Coordinator.swift in Sources */,
 				16603737220A212C00FDACBC /* MD5Helper.swift in Sources */,
+				16603743220A260200FDACBC /* URLQuerryItemEncoder.swift in Sources */,
 				16D54447220964D8009F64D4 /* Image.swift in Sources */,
 				1660373B220A24EA00FDACBC /* APIRequest.swift in Sources */,
 				16D5443322093B9E009F64D4 /* ApplicationCoordinator.swift in Sources */,
