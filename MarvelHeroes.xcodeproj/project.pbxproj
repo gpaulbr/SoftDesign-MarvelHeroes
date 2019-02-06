@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		16603737220A212C00FDACBC /* MD5Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603736220A212C00FDACBC /* MD5Helper.swift */; };
+		16603739220A247100FDACBC /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16603738220A247100FDACBC /* APIClient.swift */; };
 		1660373B220A24EA00FDACBC /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1660373A220A24EA00FDACBC /* APIRequest.swift */; };
 		1660373D220A254900FDACBC /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1660373C220A254900FDACBC /* APIResponse.swift */; };
 		1660373F220A258000FDACBC /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1660373E220A258000FDACBC /* DataContainer.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		16603736220A212C00FDACBC /* MD5Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5Helper.swift; sourceTree = "<group>"; };
+		16603738220A247100FDACBC /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		1660373A220A24EA00FDACBC /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		1660373C220A254900FDACBC /* APIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResponse.swift; sourceTree = "<group>"; };
 		1660373E220A258000FDACBC /* DataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				16D5440B2208F714009F64D4 /* AppDelegate.swift */,
+				16603738220A247100FDACBC /* APIClient.swift */,
 				16D5442B22093B36009F64D4 /* Coordinators */,
 				16D5442C22093B47009F64D4 /* Helpers */,
 				16D5442D22093B53009F64D4 /* Screens */,
@@ -314,6 +317,7 @@
 				16D5444522094672009F64D4 /* Hero.swift in Sources */,
 				16D5443922093CFA009F64D4 /* HeroesListViewController.swift in Sources */,
 				16D5444022093E2B009F64D4 /* HeroTableViewCell.swift in Sources */,
+				16603739220A247100FDACBC /* APIClient.swift in Sources */,
 				16D5444922096722009F64D4 /* HeroesListCoordinator.swift in Sources */,
 				1660373F220A258000FDACBC /* DataContainer.swift in Sources */,
 				16D5443122093B79009F64D4 /* Coordinator.swift in Sources */,
