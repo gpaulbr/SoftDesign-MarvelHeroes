@@ -22,7 +22,7 @@
 		16D5444122093E2B009F64D4 /* HeroTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16D5443F22093E2B009F64D4 /* HeroTableViewCell.xib */; };
 		16D544432209408D009F64D4 /* HeroCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D544422209408D009F64D4 /* HeroCellViewModel.swift */; };
 		16D5444522094672009F64D4 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5444422094672009F64D4 /* Hero.swift */; };
-		16D54447220964D8009F64D4 /* ThumbnailImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D54446220964D7009F64D4 /* ThumbnailImage.swift */; };
+		16D54447220964D8009F64D4 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D54446220964D7009F64D4 /* Image.swift */; };
 		16D5444922096722009F64D4 /* HeroesListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D5444822096722009F64D4 /* HeroesListCoordinator.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +56,7 @@
 		16D5443F22093E2B009F64D4 /* HeroTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroTableViewCell.xib; sourceTree = "<group>"; };
 		16D544422209408D009F64D4 /* HeroCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroCellViewModel.swift; sourceTree = "<group>"; };
 		16D5444422094672009F64D4 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
-		16D54446220964D7009F64D4 /* ThumbnailImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailImage.swift; sourceTree = "<group>"; };
+		16D54446220964D7009F64D4 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		16D5444822096722009F64D4 /* HeroesListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,7 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				16D5444422094672009F64D4 /* Hero.swift */,
-				16D54446220964D7009F64D4 /* ThumbnailImage.swift */,
+				16D54446220964D7009F64D4 /* Image.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -289,7 +289,7 @@
 				16D5444022093E2B009F64D4 /* HeroTableViewCell.swift in Sources */,
 				16D5444922096722009F64D4 /* HeroesListCoordinator.swift in Sources */,
 				16D5443122093B79009F64D4 /* Coordinator.swift in Sources */,
-				16D54447220964D8009F64D4 /* ThumbnailImage.swift in Sources */,
+				16D54447220964D8009F64D4 /* Image.swift in Sources */,
 				16D5443322093B9E009F64D4 /* ApplicationCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
