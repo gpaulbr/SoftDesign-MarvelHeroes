@@ -17,6 +17,8 @@ class HeroesListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        viewModel.UIDelegate = self
+        
         heroesTableView.delegate = self
         heroesTableView.dataSource = self
         heroesTableView.register(UINib(nibName: "HeroTableViewCell", bundle: nil), forCellReuseIdentifier: HeroTableViewCell.identifier)
@@ -51,11 +53,17 @@ extension HeroesListViewController: UITableViewDelegate {
 //        delegate?.heroesList(self, didClick: viewModel.hero(for: indexPath))
     }
     
-//    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-//        if (indexPath.row + 1) == tableView.numberOfRows(inSection: 0) {
-//            viewModel.getMoreHeroes()
-//        }
-//    }
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        if (indexPath.row + 1) == tableView.numberOfRows(inSection: 0) {
+            viewModel.getMoreHeroes()
+        }
+    }
+}
+
+extension HeroesListViewController: HeroesListViewModelUIDelegate {
+    func heroesListViewModelDidUpdate(_ heroesListViewModel: HeroesListViewModel) {
+        heroesTableView.reloadData()
+    }
 }
 
 extension HeroesListViewController: StoryboardInstantiable {
