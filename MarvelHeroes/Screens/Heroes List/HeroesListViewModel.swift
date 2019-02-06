@@ -17,6 +17,8 @@ class HeroesListViewModel {
     private var pageNumber = 1
     private var pageNumberMax = 20
     
+    var apiClient: APIClient
+    
     weak var UIDelegate: HeroesListViewModelUIDelegate?
     
     var title: String { return "Marvel Heroes" }
@@ -25,20 +27,34 @@ class HeroesListViewModel {
         return heroes.count
     }
     
-    init() {
-        let hero1 = Hero.init(id: 1, name: "Spider", description: "muitcho doido", thumbnail: ThumbnailImage.init(path: "http://i.annihil.us/u/prod/marvel/i/mg/b/c0/553a9abceb412", extension: ".jpg"))
-        heroes.append(hero1)
-//        getMoreHeroes()
+    init(_ apiClient: APIClient) {
+        self.apiClient = apiClient
+        getMoreHeroes()
     }
     
-//    func getMoreHeroes() {
-//        guard pageNumber <= pageNumberMax else { return }
+    func getMoreHeroes() {
+        guard pageNumber <= pageNumberMax else { return }
 //        APIManager.shared.getHeroes(pageNumber: pageNumber, completion: { (heroesQuerry) in
 //            self.heroes.append(contentsOf: heroesQuerry)
-//            self.UIDelegate?.movieListViewModelDidUpdate(self)
+////            self.UIDelegate?.movieListViewModelDidUpdate(self)
 //        })
-//        pageNumber += 1
-//    }
+        apiClient.send(GetHeroes(limit: 20, offset: pageNumber * 20)) { response in
+            switch response {
+            case .success(let dataContainer):
+                for hero in dataContainer.results {
+                    self.heroes.append(hero)
+                }
+                
+            case .failure(let error):
+                print(error)
+            }
+            self.pageNumber += 1
+            
+            DispatchQueue.main.async {
+                self.UIDelegate?.heroesListViewModelDidUpdate(self)
+            }
+        }
+    }
     
     func hero(for indexPath: IndexPath) -> Hero {
         return heroes[indexPath.row]

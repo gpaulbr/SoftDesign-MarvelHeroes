@@ -25,7 +25,9 @@ class HeroTableViewCell: UITableViewCell {
         self.viewModel = viewModel
         heroName.text = viewModel.name
         
-        heroImage.dowloadFromServer(link: viewModel.imageUrl, contentMode: .scaleAspectFill)
+        //TODO: Add placeholder Image
+        guard let url = viewModel.imageUrl else { return }
+        heroImage.dowloadFromServer(url: url, contentMode: .scaleAspectFill)
         heroImage.clipsToBounds = true
     }
     

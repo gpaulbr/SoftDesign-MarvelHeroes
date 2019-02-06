@@ -12,17 +12,13 @@ class HeroCellViewModel {
     
     private let hero: Hero
     
-    var name: String { return hero.name }
+    var name: String { return hero.name! }
     
-    var imageUrl: String {
-        guard let thumbnail = hero.thumbnail else {
-            return "https://www.rvroundtable.com/wp-content/uploads/revslider/home5/placeholder-1200x500.png"
-        }
-        
-        return "\(thumbnail.path)\(thumbnail.extension)"
+    var imageUrl: URL? {
+        return hero.thumbnail?.url
     }
     
-    var description: String { return hero.description }
+    var description: String { return hero.description! }
     
     init(hero: Hero) {
         self.hero = hero
